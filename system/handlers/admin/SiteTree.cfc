@@ -56,6 +56,11 @@ component extends="preside.system.base.AdminHandler" {
 		] );
 
 		prc.trashCount = siteTreeService.getTrashCount();
+		if ( isFeatureEnabled( "sitetree.pageRecords" ) ) {
+			event.setView( "/admin/sitetree/tabbedIndex" );
+		} else {
+			event.setView( "/admin/sitetree/index");
+		}
 	}
 
 	public void function ajaxChildNodes( event, rc, prc ) {

@@ -905,6 +905,7 @@ component {
 			, "devtools.extension"            = { enabled=true , siteTemplates=[ "*" ], widgets=[] }
 			, "devtools.new"                  = { enabled=false, siteTemplates=[ "*" ], widgets=[] }
 			, passwordVisibilityToggle        = { enabled=true , siteTemplates=[ "*" ] }
+			, "sitetree.pageRecords"          = { enabled=false , siteTemplates=[ "*" ] }
 		};
 	}
 
